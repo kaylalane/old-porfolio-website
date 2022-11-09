@@ -151,8 +151,10 @@ nav {
   }
   
   .project-pic {
-    width: 70%;
-    height: 70%;
+    max-width: 300px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
     padding: 1rem;
     margin-bottom: -1.5rem;
   }
@@ -166,16 +168,18 @@ nav {
 
   .projects-title {
     text-align: center;
-    margin-bottom: 0rem;
+    margin-bottom: 1rem;
   }
   
   .project-title {
-    margin-bottom: var(--bottom-margin);
+    margin-bottom: 1rem;
+
   }
   
   .project-container {
     text-align: center;
-    width: 20.875rem;
+    width: 21.875rem;
+    height: 21.875rem;
     padding: 1rem;
   }
 
@@ -189,10 +193,10 @@ nav {
   
   .project-card {
     background-color: #fff;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px var(--primary-shadow);
-    padding: 20px;
-    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px var(--primary-shadow);
+    padding: 5px;
+    margin: 5px;
   }
 
   .contact {
