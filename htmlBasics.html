@@ -26,38 +26,47 @@
     <h2> HTML Elements</h2>
     <p>
         An HTML page is written with HTML elements containing an opening tag, a closing tag and the information written between those tags. 
-        A tag opens with &lttag_name> and closes with &lt/tag_name>, the / is only for the closing bracket. <br>
-        For example, <span class="tag">&ltp></span> A simple sentence. <span class="tag">&ltp></span> would create the following on a webpage. 
+        A tag opens with tag_name> and closes with /tag_name>, the / is only for the closing bracket. <br>
+        For example, <span class="tag">p</span> A simple sentence. <span class="tag">p</span> would create the following on a webpage. 
     </p>
-
+    
     <h2>HTML Document Structure</h2>
     <p>Before personalizing your document, you need four basic elements: </p>
     <ul>
-        <li> <span class="tag">&lt!DOCTYPE html&gt </span> is the first line of every HTML document, doesn't need a closing tag and declares the document as an HTML document. </li>
-        <li> <span class="tag">&lthtml&gt</span> nestles every other element within itself. <span class="tag">&lthtml&gt</span> is the second line of every document and <span class="tag">&lt/html&gt</span> is the last line of every document. </li>
-        <li> <span class="tag">&lthead&gt</span> will be important later but it carries metadata and links to CSS and Javascript files live here. </li>
-        <li> <span class="tag">&ltbody&gt</span> carries the bulk of your webpage's information. </li>
+        <li> <span class="tag">!DOCTYPE html</span> is the first line of every HTML document, doesn't need a closing tag and declares the document as an HTML document. </li>
+        <li> <span class="tag">html</span> nestles every other element within itself. <span class="tag">html</span> is the second line of every document and <span class="tag">/html</span> is the last line of every document. </li>
+        <li> <span class="tag">head</span> will be important later but it carries metadata and links to CSS and Javascript files live here. </li>
+        <li> <span class="tag">body</span> carries the bulk of your webpage's information. </li>
     </ul>
     <p> So set up your code as the following to start. </p>
-    
+    <section class="code">
+        <span class="tag">!DOCTYPE html</span><br>
+        <span class="tag">html</span><br>
+        <span class="tag" style="margin-left: 20px">head</span><br>
+        <span class="tag" style="margin-left: 20px">/head</span><br>
+        <span class="tag" style="margin-left: 20px">body</span><br>
+		<span class="tag" style="margin-left: 30px">p</span> A simple sentence. <span class="tag">/p</span><br>
+        <span class="tag" style="margin-left: 20px">/body</span><br>
+        <span class="tag">/html</span>
+    </section>
     <h3> Opening a .html file </h3>
     <p>
         Find index.html where it's saved on your computer. 
         Double-click to open it in your browser, or right-click, find “Open With” and click your desired browser. 
         The webpage should contain “A simple sentence.” Keep index.html open to view your progress. 
     </p>
-
+    
     <h2>HTML Building Blocks</h2>
     <p>
-        Notice the tag <span class="tag">&ltp></span>? Content within the <span class="tag">&ltp></span> tag shows up as paragraph text, like the words you're seeing now. 
+        Notice the tag <span class="tag">p</span>? Content within the <span class="tag">p</span> tag shows up as paragraph text, like the words you're seeing now. 
     </p>
 
-    <p> Let's add a couple of headings with the <span class="tag">&lth1&gt</span> tag before the paragraph. </p>
+    <p> Let's add a couple of headings with the <span class="tag">h1</span> tag before the paragraph. </p>
 
     <p class="code">
-        <span class="tag">&lth1&gt</span> Moby Dick <span class="tag">&lt/h1&gt</span> <br>
-        <span class="tag">&lth2&gt</span> Typee <span class="tag">&lth2&gt</span> <br>
-	    <span class="tag">&lth3&gt</span> Benito Cereno <span class="tag">&lth3&gt</span>
+        <span class="tag">h1</span> Moby Dick <span class="tag">/h1</span> <br>
+        <span class="tag">h2</span> Typee <span class="tag">h2</span> <br>
+	    <span class="tag">h3</span> Benito Cereno <span class="tag">h3</span>
     </p>
     
     <p> Save the file and refresh index.html in your browser. </p>

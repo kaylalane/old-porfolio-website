@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+/* master modifiers */
+:root {
+  --primary-color: #6B1848;
+  --secondary-color: #8AA8A9;
+  --tertiary-color: #290438;
+  --primary-shadow: #efeded;
+  --secondary-shadow: #9E728C;
+  font-family: 'Sono', sans-serif;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  scroll-behavior: smooth;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: .2s;
+}
+
+a:hover {
+ color: var(--secondary-shadow);
+}
+
+.section {
+  gap: 2.5rem;
+  /*padding: 90px; */
+  justify-content: center;
+
+}
+.section-title {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+
+
+/* -------navigation bar------- */
+nav {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+ nav ul {
+    list-style-type: none;
+    text-align: left;
+    font-size: 13pt;
+    text-decoration: none;
+    float: right;
+    margin-right: 50px;
+  }
+  nav li  {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    padding: 10px;
+    margin:0;
+    transition: 3s;
+  }
+  
+  nav .logo {
+    width: 160px;
+    height: 69px;
+    float: left;
+    margin-left: 50px;
+  }
+/* -------end navigation bar------- */
+
+/* -------   HERO  ------- */
+.intro-block, intro-block h1{
+  text-align: center;
+  justify-content: center;
+  
+}
+.intro-block ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.intro-block .socicon {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  padding: 0px 0px 10px 20px;
+  align-items: center;
+}
+.intro-block .intro-image {
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right:auto;
+    display: block;
+    padding-bottom: -2.5rem; 
+    justify-content: center;
+}
+
+.intro-bio {
+  max-width: 900px;
+    width: fit-content;
+    padding: 1.625rem;
+    margin: 4rem;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px 2px var(--primary-shadow); 
+}
+
+.expand-more {
+  width: 5%; 
+  height: 5%;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  
+}
+/* ------   END HERO   ------- */
+
+
+/* ------ about me ------- */
+.about-me {
+  justify-content: center;
+}
+.row {
+  display: flex;
+  width: 100%;
+}
+.column {
+  float: left;
+}
+.column.logo {
+  flex: 0 0 15%;
+  max-width: 25%;
+}
+
+.column.info {
+  flex: 0 0 60%;
+  max-width: 60%;
+}
+
+.column.info.about-text {
+  width: 50%;
+  float:left;
+}
+.column.info.skills{
+  width: 45%;
+  float:right;
+}
+
+.box {
+  padding: 2rem;
+  background-color: var(--primary-shadow);
+  border-radius: 8px;
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+.about-me img {
+  max-width: 100px;
+  justify-content: center;
+}
+
+.download-button {
+  padding: 12px 20px;
+  margin-left: auto;
+  margin-right:auto;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  border-radius: 9px;
+  border: 2px solid black;
+  transition-duration: .5s;
+  background-color: white;
+}
+.download-button:hover {
+  background-color: black;
+  color:white;
+}
+
+.skills h4 {
+  margin-bottom: .3rem;
+}
+.progress-bar {
+  background-color: white;
+  width: 80%;
+  
+  border-radius: 15px;
+ 
+} 
+
+.progress {
+  background-color: var(--primary-color);
+  height: 15px;
+  color: white;
+  text-align: right;
+  font-size:8.5pt;
+  border-radius: 15px;
+ align-items: center;
+}
+
+.html {
+  width: 95%;
+}
+.css {
+  width: 95%;
+}
+.javascript {
+  width: 60%;
+}
+
+/* ------ end about me ------- */
+
+/* ------ skills ------- */
+
+
+.icon {
+    width: 100px;
+    height: 100px;
+    padding: 1.25rem; 
+}
+
+  .projects {
+    padding: 32px 0;
+    margin-top: 2rem;
+  }
+  
+  .project-pic {
+    max-width: 500px;
+    max-height: 500px;
+    padding: 1rem;
+    margin-bottom: -1.5rem;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-left:4rem;
+    margin-right:4rem;
+  }
+
+  .projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .project-title {
+    margin-bottom: 1rem;
+
+  }
+  
+  .project-container {
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 15px;
+    
+  }
+
+  .project-container p {
+    padding: 0.3rem;
+  }
+  
+  .project-details {
+    margin-bottom: 0;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px black;
+    padding: 8px;
+    margin: 1rem;
+  }
+
+  footer {
+    background-color: var(white);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+  }
