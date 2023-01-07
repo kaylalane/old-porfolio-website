@@ -1,100 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Nova+Round&family=Playfair+Display:ital@0;1&family=Sora&display=swap');
 /* master modifiers */
 :root {
   --primary-color: #6B1848;
   --secondary-color: #8AA8A9;
-  --tertiary-color: #290438;
-  --primary-shadow: #efeded;
-  --secondary-shadow: #9E728C;
-  font-family: 'Sono', sans-serif;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  --tertiary-color: #9E728C;
+  --primary-shadow: black;
+  --secondary-shadow: #efeded;
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
   scroll-behavior: smooth;
 }
-
-a {
-    color: black;
-    text-decoration: none;
-    transition: .2s;
+main {
+  margin-top: 30px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-a:hover {
- color: var(--secondary-shadow);
-}
-
-.section {
-  gap: 2.5rem;
-  /*padding: 90px; */
+section {
+  margin-left: 140px;
   justify-content: center;
 
 }
 .section-title {
   text-align: center;
   letter-spacing: 2px;
+  font-family: 'Imprima', sans-serif;
 }
 
-
+a {
+  color: black;
+  text-decoration: none;
+  transition: .3s;
+}
+a:hover {
+  color:var(--secondary-shadow);
+}
 
 /* -------navigation bar------- */
 nav {
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    align-items: center;
-    overflow: hidden;
+    width: 140px;
+    height: 100%;
+    float: left;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    line-height: 5px;
   }
-  
- nav ul {
-    list-style-type: none;
-    text-align: left;
-    font-size: 13pt;
+  nav button {
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    padding: 5px 32px;
+    font-size: 18pt;
+    text-align: center;
     text-decoration: none;
-    float: right;
-    margin-right: 50px;
+    font-family: 'Sora', sans-serif; 
+    transition: .3s;
   }
-  nav li  {
-    display: inline;
-    margin: 0;
+ nav ul {
+    font-size: 18pt;
+    margin-left: 0;
+  }
+
+  nav ul li  {
+    display: inline-block;
+    list-style-type: none;
+    margin:0;
     padding: 0;
   }
-  nav a {
-    padding: 10px;
-    margin:0;
-    transition: 3s;
-  }
   
+  nav button:hover {
+    color:#9E728C
+  }
+
   nav .logo {
-    width: 160px;
-    height: 69px;
-    float: left;
-    margin-left: 50px;
+    width: 70%;
+    padding-top: 30px;
+    padding-left: 35px;
+    padding-bottom: 30px;
+  }
+
+  nav button.active {
+    color:#9E728C ;
   }
 /* -------end navigation bar------- */
 
 /* -------   HERO  ------- */
-.intro-block, intro-block h1{
+.intro-block{
   text-align: center;
   justify-content: center;
-  
 }
 .intro-block ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
   padding: 0;
+  gap:1rem;
 }
 
 .intro-block .socicon {
-  width: 2rem;
-  height: 2rem;
+  width: 34px;
+  height: 34px;
   display: flex;
-  padding: 0px 0px 10px 20px;
   align-items: center;
 }
-.intro-block .intro-image {
-    width: 300px;
-    height: 300px;
+
+.intro-image {
+    width: 200px;
+    height: 200px; 
     margin-left: auto;
     margin-right:auto;
     display: block;
@@ -105,19 +122,12 @@ nav {
 .intro-bio {
   max-width: 900px;
     width: fit-content;
-    padding: 1.625rem;
-    margin: 4rem;
+    padding: 1.625rem 0;
+    margin: 0;
     border-radius: 3px;
     box-shadow: 2px 2px 4px 2px var(--primary-shadow); 
 }
 
-.expand-more {
-  width: 5%; 
-  height: 5%;
-  padding-top: 100px;
-  padding-bottom: 80px;
-  
-}
 /* ------   END HERO   ------- */
 
 
@@ -128,6 +138,7 @@ nav {
 .row {
   display: flex;
   width: 100%;
+  
 }
 .column {
   float: left;
@@ -153,13 +164,13 @@ nav {
 
 .box {
   padding: 2rem;
-  background-color: var(--primary-shadow);
+  background-color: var(--secondary-shadow);
   border-radius: 8px;
   margin-right: 4rem;
   margin-left: 4rem;
 }
 
-.about-me img {
+.about img {
   max-width: 100px;
   justify-content: center;
 }
@@ -184,10 +195,10 @@ nav {
 .skills h4 {
   margin-bottom: .3rem;
 }
+
 .progress-bar {
   background-color: white;
   width: 80%;
-  
   border-radius: 15px;
  
 } 
@@ -217,24 +228,11 @@ nav {
 /* ------ skills ------- */
 
 
-.icon {
-    width: 100px;
-    height: 100px;
-    padding: 1.25rem; 
-}
-
   .projects {
     padding: 32px 0;
     margin-top: 2rem;
   }
-  
-  .project-pic {
-    max-width: 500px;
-    max-height: 500px;
-    padding: 1rem;
-    margin-bottom: -1.5rem;
-  }
-  
+
   .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -244,40 +242,69 @@ nav {
     margin-right:4rem;
   }
 
-  .projects-title {
+  .projects .projects-filter {
+    flex: 0 0 100%;
+    max-width: 100%;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom:1rem;
+  }
+  
+  .projects-filter button {
+    border:none;
+    background-color: transparent;
+    font-weight: 300;
+    text-transform: capitalize;
+    cursor:pointer;
+    margin: 0 2;
+    white-space: nowrap;
+    transition: .3s;
+  }
+
+  .projects-filter button:active {
+    color:#290438;
+    position: relative;
+  }
+
+  .projects-filter button:active::before {
+    content:'';
+    position:absolute;
+    bottom:-.75rem;
+    left:45%;
+    width: 0.3rem;
+    height: 0.3rem;
+    background-color: black;
+    border-radius: 50%;
+  }
+
+
+  .project-pic {
+    width:70%;
+    padding: 1rem;
+    margin-bottom: -1.5rem;
   }
   
   .project-title {
     margin-bottom: 1rem;
-
   }
   
   .project-container {
     text-align: center;
     width: 20rem;
     height: 20rem;
-    border-radius: 15px;
-    
-  }
-
-  .project-container p {
-    padding: 0.3rem;
-  }
-  
-  .project-details {
-    margin-bottom: 0;
+    max-width: 33%;
   }
   
   .project-card {
+    width:300px;
+    height: 300px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 3px 5px black;
     padding: 8px;
     margin: 1rem;
+    overflow: auto;
   }
-
+  
   footer {
     background-color: var(white);
     padding: 1.25rem;
