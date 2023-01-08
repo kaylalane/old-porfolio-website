@@ -1,3 +1,4 @@
+
 // eslint-disable-next-line no-unused-vars
 function pageNavigation(evt, navLink) {
   var i, tabcontent, tablinks;
@@ -13,3 +14,4 @@ function pageNavigation(evt, navLink) {
   evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click();
+

@@ -11,17 +11,10 @@
   box-sizing: border-box;
   font-family: 'Sora', sans-serif;
   scroll-behavior: smooth;
+  background-color: white;
 }
 main {
-  margin-top: 30px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-section {
-  margin-left: 140px;
-  justify-content: center;
-
+  margin-top: 100px;
 }
 .section-title {
   text-align: center;
@@ -35,58 +28,55 @@ a {
   transition: .3s;
 }
 a:hover {
-  color:var(--secondary-shadow);
+  color:var(--tertiary-color);
 }
 
+  
 /* -------navigation bar------- */
 nav {
-    width: 140px;
-    height: 100%;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    display: inline-block;
+    align-items:center;
+    text-align: center;
     float: left;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    overflow-x: hidden;
-    line-height: 5px;
+    overflow: hidden;
+    max-height: 150px;
   }
-  nav button {
+  nav a {
     border: none;
     background-color: transparent;
-    display: inline-block;
-    padding: 5px 32px;
-    font-size: 18pt;
-    text-align: center;
-    text-decoration: none;
+    font-size: 16pt;
     font-family: 'Sora', sans-serif; 
     transition: .3s;
-  }
- nav ul {
-    font-size: 18pt;
-    margin-left: 0;
-  }
-
-  nav ul li  {
-    display: inline-block;
-    list-style-type: none;
-    margin:0;
-    padding: 0;
+    float: right;
+    cursor: pointer;
   }
   
-  nav button:hover {
-    color:#9E728C
+  nav ul li  {
+    float: left;
+    list-style-type: none;
+    font-family: 'Sora', sans-serif;  
+    padding-left: 15px;
   }
-
+  
   nav .logo {
-    width: 70%;
-    padding-top: 30px;
-    padding-left: 35px;
-    padding-bottom: 30px;
+    float: left;
+    width: 30%;
+    padding-left: 5px;
+    padding-top: 10px;
   }
 
-  nav button.active {
+  nav a:active {
     color:#9E728C ;
   }
+  
 /* -------end navigation bar------- */
 
 /* -------   HERO  ------- */
@@ -303,6 +293,12 @@ nav {
     padding: 8px;
     margin: 1rem;
     overflow: auto;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
   }
   
   footer {
