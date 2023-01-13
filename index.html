@@ -2,38 +2,47 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="src/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-       <script src="App.js"></script>
+       <script src="src/script.js"></script>
         <meta charset="UTF-8">
         <meta name="keywords" content="Kayla Marie Lane, portfolio, HTML">
         <meta name="description" content="Kayla Lane's Portfolio">
         <meta name="author" content="Kayla Lane">
-        <link rel="icon" type="image/x-icon" href="../media/icons/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="media/icons/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kayla Marie Lane </title>
         
     </head>
     <body onload="pageNavigation(event, 'about-me')">
-        <nav class="tab">
-    
-          <ul>
-            <li><img class="logo" src="../media/icons/color-logo.png" alt="Site Logo"/> </li>
-            <li id="defaultOpen" class="tabLinks" ><a onclick="pageNavigation(event, 'about-me')">About</a></li>
-            <li class="tabLinks"><a onclick="pageNavigation(event, 'projects')">Projects</a></li> 
-            <li class="tabLinks"><a onclick="pageNavigation(event, 'goals')">Goals</a></li>
-            <li><a href="https://kaylamarielane.com/blog" target="_blank">Blog</a></li>
-            <li><a href="lang.html"> Language Progress</a></li>
-          </ul>
+        <nav>
+          <img class="logo" src="media/icons/k-logo.png" alt="Site Logo"/> 
+
+          <ul class="navBar">
+            <li><a id="defaultOpen" class="tabLinks" onclick="pageNavigation(event, 'about-me')">About</a></li>
+            <li><a class="tabLinks" onclick="pageNavigation(event, 'projects')">Projects</a></li> 
+            <li><a class="tabLinks" onclick="pageNavigation(event, 'goals')">Goals</a></li>
+            <!--<li><a class="tabLinks" onclick="pageNavigation(event, 'lang')"> Languages</a></li>-->
+            <li><a class="tabLinks" href="https://blog.kaylamarielane.com">Blog</a></li>
+            
+         </ul>
+         
+          <!-- <svg class="icon" width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> -->
+
         </nav>
         
       <main>
       <section id="about-me" class="tabContent">
+          <!--
+          <div class="column logo">
+            <img src="media/icons/k-logo.png" class=""/>
+          </div>
+          -->
           <div class="intro-block">
-            <img src="../media/icons/kayla-icon.png" class="intro-image" alt="Profile Image"/>
-            <h1 class="section-title">I'm Kayla Lane</h1>
-            <ul>
+            <img src="media/icons/kayla-icon.png" class="intro-image" alt="Profile Image"/>
+            <h2 class="section-title">I'm Kayla Lane</h2>
+            <ul class="">
               
               <li><a href="https://www.linkedin.com/in/kaylamarielane/" target="_blank"> 
                 <svg class="socicon" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
@@ -54,21 +63,15 @@
               </a>
               </li>
             </ul>
+          
             
           </div>
-      <div class="about">
-        <div class="row">
-          <!--
-          <div class="column logo">
-            <img src="media/icons/k-logo.png" class=""/>
-          </div>
-          -->
-          <div class="box">
 
-            <div class="column info about-text">
+          <div class="box row">
+            <div class="column">
               
               <p>
-                I'm a junior English major at the University of Florida. 
+                I'm a junior Linguistics major at the University of Florida. 
                 I'm an excellent communicator because I have a knack for attention to detail from writing, editing and coding. 
               </p>  
               <p>
@@ -77,14 +80,14 @@
             <p>
                 I'm currently seeking internships in publishing and web development so feel free to email me at kaylalane188@icloud.com or message me on LinkedIn.
             </p>
+            <a href="/media/files/LaneKayla_Resume.pdf" target="_blank" download="GFG">
+              <button type="button" class="download-button">Resume</button>
+            </a> 
 
-              <a href="../media/files/LaneKayla_Resume.pdf" target="_blank" download="GFG">
-                <button type="button" class="download-button">Resume</button>
-              </a> 
 
             </div>
 
-            <div class="column info skills">
+            <div class="column">
 
               <div>
                 <h4>HTML</h4>
@@ -108,25 +111,26 @@
               </div>
             
             </div>
-          </div>
-        </div>
+          
+        
       </div>
      </section>
 
       <section class="tabContent" id="projects">
         <div class="projects">
-        <h2 class="section-title">Projects</h2>
 
+        <!--
         <div class="projects-filter">
           <button type="button" class="active">Everything</button>
           <button type="button">Code</button>
           <button type="button">Art</button>
         </div>
+      -->
         <div class="projects-container ">
           
           <div class="project-container project-card">
               <img
-              src="../media/projects/crying-girl.gif"
+              src="media/projects/crying-girl.gif"
               alt="Crying Gif"
               loading="lazy"
               class="project-pic"
@@ -141,7 +145,7 @@
             
           <div class="project-container project-card">
                 <img 
-                src="../media/projects/minesweeper.png"
+                src="media/projects/minesweeper.png"
                 alt="minesweeper"
                 loading="lazy"
                 class="project-pic"
@@ -156,17 +160,83 @@
         </div>
       </div>
       </section>
-
+      
       <section id="goals" class="tabContent">
-        <h2 class="section-title">Goals</h2>
-        <h3>Professional</h3>
-        <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-        <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 12.5l3 3 7-7" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-        <h3>Personal</h3>
+        <div class="box">
+          <h3>Professional Goals</h3>
+          
+          <svg width="14px" height="14px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 12.5l3 3 7-7" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          Make a portfolio website
+          <br>
+
+          <svg width="14px" height="14px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          Create a small React project.
+          <br>
+          
+          <svg width="14px" height="14px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          Make a flashcard website
+
+          <h3>Personal Goals</h3>
+          <svg width="14px" height="14px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          Research Frontend internships
+          
+          <h3>Language Goals</h3>
+          <svg width="14px" height="14px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 12.5l3 3 7-7" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          Finish a Spanish bio
+          <br>
+
+          <svg width="14px" height="14px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          Test myself on the 100 most common Spanish words
+
+
+        </div>
       </section>
+
+      <!--
       <section id="lang" class="tabContent">
-        <h2>Language Learning</h2>
+        <h2 class="section-title">Spanish</h2>
+        <div class="row">
+          <div class="sidebar">
+
+            <ul>
+            <li><a href="#lang-bio"><svg width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 11.5v5M12 7.51l.01-.011M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>
+            <li><a href="lang-interests"><svg width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M22 8.862a5.95 5.95 0 01-1.654 4.13c-2.441 2.531-4.809 5.17-7.34 7.608-.581.55-1.502.53-2.057-.045l-7.295-7.562c-2.205-2.286-2.205-5.976 0-8.261a5.58 5.58 0 018.08 0l.266.274.265-.274A5.612 5.612 0 0116.305 3c1.52 0 2.973.624 4.04 1.732A5.95 5.95 0 0122 8.862z" stroke="#000000" stroke-width="1.5" stroke-linejoin="round"></path></svg></a></li>
+            <li><a href="lang-media"><svg width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M6.906 4.537A.6.6 0 006 5.053v13.894a.6.6 0 00.906.516l11.723-6.947a.6.6 0 000-1.032L6.906 4.537z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a></li>
+            </ul>
+
+          </div>
+
+          <div id="lang-bio" class="column box">
+            <h3>Bio</h3>
+            <p >
+              Hola! Mi llamo Kayla Lane. Soy estudiante de lingüística de universidad de Florida. 
+              Me gusta leer, hacer en croché, manejar mi carro y aprender nuevo cosas. 
+              Yo quiero ser a escritor técnico o a desarrolladora web. 
+            </p>
+
+            <h3 id="lang-interests">Interés</h3>
+            <p>
+              Yo hacer cuatro sombreros de cubo (bucket hat) en croché. Dos para mí y dos para una de mi hermanas que en vende y azul.
+            </p>
+
+            <h3 id="lang-media" style="text-emphasis: bold;">Medio</h3>
+             <p>
+              Yo escucho música todos los dias y miro television frecuentement tambien.
+             </p>
+
+             </p>
+         
+          </div>
+
+
+        </div>
       </section>
+    -->
+    <section id="wip">
+
+    </section>
+
+
     </main>
     
   
