@@ -1,23 +1,10 @@
 /* eslint-disable no-undef */
+/*
 const { doc } = require("prettier");
 
 import React from 'react';
-import Fade from 'react-reveal/Fade';
 
-class fadeOnScroll extends React.Component {
-  render() {
-    return (
-      <div>
-        <Fade bottom>
-          <h1>React Reveal</h1>
-        </Fade>
-      </div>
-    );
-  }
-}
 
-export default fadeOnScroll;
-/*
 function pageNavigation(evt, navLink) {
 
   var i, tabcontent, tablinks;
@@ -37,8 +24,7 @@ function pageNavigation(evt, navLink) {
   evt.currentTarget.className += " active";
 }
 
-*/
-
+*
 function responsiveMenu() {
   var x = document.getElementById("nav");
   if (x.className === "navBar") {
@@ -55,3 +41,5 @@ menu.onclick = () => {
   menu.classList.toggle('bx-x');
   navBar.classList.toggle('open');
 }
+
+*/

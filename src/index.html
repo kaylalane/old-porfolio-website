@@ -2,10 +2,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="src/style.css">
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-L00X2GQTHH"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-L00X2GQTHH');
+      </script>
+
+
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-       <script src="src/script.js"></script>
+       <script src="script.jsx"></script>
         <meta charset="UTF-8">
         <meta name="keywords" content="Kayla Marie Lane, portfolio, HTML">
         <meta name="description" content="Kayla Lane's Portfolio">
@@ -15,56 +26,67 @@
         <title>Kayla Marie Lane </title>
         
     </head>
+   
     <body onload="pageNavigation(event, 'about-me')">
-        <nav>
-          <img class="logo" src="media/icons/k-logo.png" alt="Site Logo"/> 
-
-          <ul class="navBar">
+        <header>
+      <nav>
+          
+          <ul>
+            <li>
+             <img
+             src="media/icons/k-logo.png"
+             class="logo"
+             />
+            </li>
             <li><a id="defaultOpen" class="tabLinks" href="#about-me">About</a></li>
             <li><a class="tabLinks" href="#projects">Projects</a></li> 
             <li><a class="tabLinks" href="#goals">Goals</a></li>
-            <!--<li><a class="tabLinks" onclick="pageNavigation(event, 'lang')"> Languages</a></li>
+            <!-- <li>
+              <a class="button" href="media/files/LaneKayla_Resume.pdf">
+                Resume
+              </a>
+            </li> -->
             <li><a class="tabLinks" href="https://blog.kaylamarielane.com">Blog</a></li>
-            -->
+            
          </ul>
          
           <!-- <svg class="icon" width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> -->
 
         </nav>
-        
+        </header>
       <main>
-        <div class="intro">
-          <h1 class="introTitle">Hi! I'm Kayla Lane. <br>Junior Front-end Developer.</h1>
-          <div class="intro-block">
+        <section id="intro">
+          <h1>Hi! I'm Kayla Lane. <br>Junior Front-end Developer.</h1>
+          <div>
             <img src="media/icons/kayla-icon.png" class="intro-image" alt="Profile Image"/>
 
             <ul >
               
               <li><a href="https://www.linkedin.com/in/kaylamarielane/" target="_blank"> 
-                <svg class="socicon" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffffff"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                <svg class="social" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffffff"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
               </a></li>
 
               <li><a href="https://github.com/kaylalane" target="_blank"> 
-                <svg class="socicon" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M16 22.027v-2.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 00-1.5-3.75 5.07 5.07 0 00-.09-3.77s-1.18-.35-3.91 1.48a13.38 13.38 0 00-7 0c-2.73-1.83-3.91-1.48-3.91-1.48A5.07 5.07 0 005 5.797a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 00-.94 2.58v2.87M9 20.027c-3 .973-5.5 0-7-3" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                <svg class="social" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M16 22.027v-2.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 00-1.5-3.75 5.07 5.07 0 00-.09-3.77s-1.18-.35-3.91 1.48a13.38 13.38 0 00-7 0c-2.73-1.83-3.91-1.48-3.91-1.48A5.07 5.07 0 005 5.797a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 00-.94 2.58v2.87M9 20.027c-3 .973-5.5 0-7-3" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
               </a>
               </li>
               <li><a href="https://www.instagram.com/motionsbykayla/" target="_blank">
-                <svg class="socicon" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 16a4 4 0 100-8 4 4 0 000 8z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 16V8a5 5 0 015-5h8a5 5 0 015 5v8a5 5 0 01-5 5H8a5 5 0 01-5-5z" stroke="#000000" stroke-width="1.5"></path><path d="M17.5 6.51l.01-.011" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                <svg class="social" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 16a4 4 0 100-8 4 4 0 000 8z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 16V8a5 5 0 015-5h8a5 5 0 015 5v8a5 5 0 01-5 5H8a5 5 0 01-5-5z" stroke="#000000" stroke-width="1.5"></path><path d="M17.5 6.51l.01-.011" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
               </a>
               </li>
               
               <li><a href="mailto: kaylalane188@icloud.com" target="_blank">
-                <svg class="socicon" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 9l5 3.5L17 9" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 17V7a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2z" stroke="#000000" stroke-width="1.5"></path></svg>
+                <svg class="social" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 9l5 3.5L17 9" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 17V7a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2z" stroke="#000000" stroke-width="1.5"></path></svg>
                
               </a>
               </li>
             </ul>
             
             
-          </div>
+          </section>
           
         </div>
-      <section id="about-me" class="" onscroll="">
+      <section id="about-me" class="" >
         <br><br><br><br>
           <!--
           <div class="column logo">
@@ -87,7 +109,7 @@
             <p>
                 I'm currently seeking internships in publishing and web development so feel free to email me at kaylalane188@icloud.com or message me on LinkedIn.
             </p>
-            <a href="/media/files/LaneKayla_Resume.pdf" target="_blank" download="GFG">
+            <a href="/media/files/LaneKayla_Resume.pdf" target="_blank">
               <button type="button" class="download-button">Resume</button>
             </a> 
 
@@ -95,105 +117,77 @@
             </div>
 
             <div class="column">
+              <div class="progress">
+    
+                <div>
+                  <h4>HTML</h4>
+                  <div class="progress-background">
+                    <div class="progress-bar html"></div>
+                  </div>  
+                </div>
 
-              <div>
-                <h4>HTML</h4>
-                <div class="progress-bar">
-                  <div class="progress html"></div>
-                </div>  
-              </div>
-
-              <div>
-                <h4>CSS</h4>
-                <div class="progress-bar">
-                  <div class="progress css"></div>
+                <div>
+                  <h4>CSS</h4>
+                  <div class="progress-background">
+                    <div class="progress-bar css"></div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4>Javascript</h4>
+                  <div class="progress-background">
+                    <div class="progress-bar javascript"></div>
+                  </div>
                 </div>
               </div>
-              
-              <div>
-                <h4>Javascript</h4>
-                <div class="progress-bar">
-                  <div class="progress javascript"></div>
-                </div>
-              </div>
-            
             </div>
+
           
         
       </div>
      </section>
-
+     <div class="section-pink">
       <section class="" id="projects">
         <h1 class="sectionTitle">Projects</h1>
-        <div>
 
-        <!--
-        <div class="projects-filter">
-          <button type="button" class="active">Everything</button>
-          <button type="button">Code</button>
-          <button type="button">Art</button>
-        </div>
-      -->
-        <div class="projects-container">
-          
-          <div class="project-container">
-            <div class="project-card">
-              <img
-              src="media/projects/crying-girl.gif"
-              alt="Crying Gif"
-              loading="lazy"
-              class="project-pic"
-              />
-              <div class="overlay">
-                <h4 class="project-title">Crying Gif | Nov. 2022</h4>
-                <!-- <p class="project-details">
-                    My second animation that I created in Adobe Photoshop's timeline by turning layers into keyframes. 
-                </p> -->
-              </div>
-            </div>
-           
+
+         <article>
+          <div class="text">
+
+          <h2>Flashcard Website</h2>
+          <p class="black-box">Description of project. A basic flashcard website I hosted in Firebase. </p>
+          <h4>Technologies used</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+         
           </div>
-
-
-            
-          <div class="project-container">
-            <div class="project-card">
-                <img 
-                src="media/projects/minesweeper.png"
-                alt="minesweeper"
-                loading="lazy"
-                class="project-pic"
-                />
-                <div class="overlay">
-                  <h3 class="project-title">Minesweeper | April 2021</h3>
-                </div>
-            </div>
-            <!-- <p class="project-details">
-              A class project I created with C++ and SFML. 
-            </p>  -->
-          </div>
-          
-      <div class="project-container">
-        <div class="project-card">
-            <img 
+          <img
             src="media/projects/flashcards.png"
-            alt="flashcards"
-            loading="lazy"
-            class="project-pic"
-            />
-            <div class="overlay">
-              <h3 class="project-title"><a href="https://flashcards.kaylamarielane.com/">Flashcard Website</a> | Jan. 2023 </h3>
-            </div>
-        </div>
-           <!--  <p class="project-details">
-              A simple flashcard website. Though I still need to figure out storage and sorting. 
-            </p> -->
-      </div>
+          />
+        </article>
 
+        <article class="reverse">
+          <div class="text">
+
+          <h2>Minesweeper</h2>
+          <p class="black-box">Description of project. A basic flashcard website I hosted in Firebase. </p>
+          <h4>Technologies used</h4>
+          <ul>
+            <li>C++</li>
+            <li>SFML</li>
+          </ul>
+         
           </div>
-        </div>
-      </div>
+          <img
+            src="media/projects/minesweeper.png"
+          />
+        </article>
+
       </section>
+     </div>
     
       <section id="goals" class="tabContent">
         <h1 class="sectionTitle">Goals</h1>
@@ -228,7 +222,16 @@
           Cone's Dike Trail
         </div>
       </section>
-
+      <!-- <div class="section-pink">
+        <section id="contact-me">
+          <h1>Contact me</h1>
+          <p>
+          I'm always interested in new opportunites!
+          </p>
+          <buttom></buttom>
+        </section>
+      </div>
+ -->
       <!--
       <section id="lang" class="tabContent">
         <h2 class="section-title">Spanish</h2>
