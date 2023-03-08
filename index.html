@@ -11,7 +11,8 @@
 
         gtag('config', 'G-L00X2GQTHH');
       </script>
-        <link rel="stylesheet" href="src/style.scss">
+        <link rel="stylesheet" href="src/style.css">
+        <script src="src/script.jsx"></script>
         <meta charset="UTF-8">
         <meta name="keywords" content="Kayla Marie Lane, portfolio, HTML">
         <meta name="description" content="Kayla Lane's Portfolio">
@@ -26,10 +27,10 @@
           <nav>
             <ul>
               <li>
-              <img
-              src="src/media/icons/pink-logo.png"
-              class="logo"
-              />
+                <img
+                src="src/media/icons/pink-logo.png"
+                class="logo"
+                />
               </li>
               <li><a id="defaultOpen" class="tabLinks" href="#about-me">About</a></li>
               <li><a class="tabLinks" href="#projects">Projects</a></li> 
@@ -55,11 +56,12 @@
             I'm an excellent communicator because I have a knack for attention to detail from writing, editing and coding. 
           </p> 
 
-            <ul >
-              
-              <li><a href="https://www.linkedin.com/in/kaylamarielane/" target="_blank"> 
-                LI
-              </a></li>
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/kaylamarielane/" target="_blank"> 
+                  LI
+                </a>
+              </li>
 
               <li>
                 <a href="https://github.com/kaylalane" target="_blank"> 
@@ -68,11 +70,12 @@
               </li>
             </ul>
 
-          </article>
+        </article>
           
       <article id="about-me" class="full-width" >
         
           <h2 class="article-title">About me</h2>
+          
           <div class="row">
             
             <div class="column info">
@@ -133,24 +136,29 @@
       <h2 class="article-title">Projects</h2>
     
 
-        <section class="">
+        <section >
           <div class="text">
             
-            <h3><a href="https://netflix-dusky-tau.vercel.app/" target="_blank">Netflix Clone</a> </h3>
+            <h3>
+              <a href="https://netflix-dusky-tau.vercel.app/" target="_blank">Netflix Clone</a> 
+            </h3>
             
             <p class="details-box">
               An unfinished Netflix clone. I still need to code the popup details page.
             </p>
-            <h5>Technologies used</h5>
+
+            <h5>Technologies used:</h5>
+
             <ul>
               <li>React JS</li>
               <li>Sass</li>
               <li>Next</li>
             </ul>
+
           </div>
 
           <img
-          src="src/media/projects/netflix-clone.png"
+            src="src/media/projects/netflix-clone.png"
           />
 
         </section>
@@ -165,10 +173,9 @@
 
             <p class="details-box">
               A trivia game to get more comfortable with hooks in React. 
-              
             </p>
             
-            <h5>Technologies used</h5>
+            <h5>Technologies used:</h5>
             <ul>
               <li>React Js</li>
               <li>Next JS</li>
@@ -177,7 +184,6 @@
           
           </div>
 
-          
           <img
             src="src/media/projects/trivia-game.png"
           />
@@ -189,11 +195,14 @@
             <h3>
               <a href="https://flashcards.kaylamarielane.com/" target="_blank">Flashcard Website </a>
             </h3>
+
             <p class="details-box">
               A basic flashcard website I hosted in Firebase. By the end of Spring 2023,
               I plan to figure out how to integrate SQL and storage. 
             </p>
-            <h5>Technologies used</h5>
+
+            <h5>Technologies used:</h5>
+
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -217,13 +226,16 @@
 
           
           <ul>
-            <li>Make a portfolio website
+            <li><s>Make a portfolio website</s>
               <ul class="done">
                 <li>Create a translate button</li>
               </ul>
             </li>
             
-            <li><a href="https://netflix-dusky-tau.vercel.app/" alt="Netflix clone">Make a React project | Netflix Clone</a></li>
+            <li><s>
+              <a href="https://netflix-dusky-tau.vercel.app/" alt="Netflix clone">Make a React project | Netflix Clone</a></s>  
+            </li>
+
           </ul>
           
       </article>
@@ -286,6 +298,6 @@
     <footer>
         <p class="copy">&copy; Copyright 2023</p>
     </footer>
-    <script src="src/script.jsx"></script>
+    
     </body>  
 </html>
