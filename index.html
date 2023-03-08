@@ -11,109 +11,81 @@
 
         gtag('config', 'G-L00X2GQTHH');
       </script>
-
-
-        <link rel="stylesheet" href="src/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+        <link rel="stylesheet" href="src/style.scss">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
        <script src="src/script.jsx"></script>
         <meta charset="UTF-8">
         <meta name="keywords" content="Kayla Marie Lane, portfolio, HTML">
         <meta name="description" content="Kayla Lane's Portfolio">
         <meta name="author" content="Kayla Lane">
-        <link rel="icon" type="image/x-icon" href="media/icons/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="src/media/icons/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kayla Marie Lane </title>
-        
+        <script src="src/script.jsx"></script>
     </head>
    
-    <body onload="pageNavigation(event, 'about-me')">
+    <body >
         <header>
-      <nav>
+          <nav>
+            <ul>
+              <li>
+              <img
+              src="src/media/icons/pink-logo.png"
+              class="logo"
+              />
+              </li>
+              <li><a id="defaultOpen" class="tabLinks" href="#about-me">About</a></li>
+              <li><a class="tabLinks" href="#projects">Projects</a></li> 
+              <li><a class="tabLinks" href="#goals">Goals</a></li>
+              
+              <li><a class="tabLinks" href="https://blog.kaylamarielane.com">Blog</a></li>
+              <li>
+                <a class="resume" href="media/files/LaneKayla_Resume.pdf">
+                  Resume
+                </a>
+              </li>
+            </ul>
           
-          <ul>
-            <li>
-             <img
-             src="src/media/icons/k-logo.png"
-             class="logo"
-             />
-            </li>
-            <li><a id="defaultOpen" class="tabLinks" href="#about-me">About</a></li>
-            <li><a class="tabLinks" href="#projects">Projects</a></li> 
-            <li><a class="tabLinks" href="#goals">Goals</a></li>
-            <!-- <li>
-              <a class="button" href="media/files/LaneKayla_Resume.pdf">
-                Resume
-              </a>
-            </li> -->
-            <li><a class="tabLinks" href="https://blog.kaylamarielane.com">Blog</a></li>
-            
-         </ul>
-         
-          <!-- <svg class="icon" width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M3 5h18M3 12h18M3 19h18" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> -->
-
-        </nav>
+          </nav>
         </header>
+
       <main>
-        <section id="intro">
-          <h1>Hi! I'm Kayla Lane. <br>Junior Front-end Developer.</h1>
-          <div>
-            <img src="src/media/icons/kayla-icon.png" class="intro-image" alt="Profile Image"/>
+        <article id="intro" class="full-width">
+          <h1>Kayla Lane </h1>
+          <p class="position">Junior front-end developer</p>
+          <p>
+            I'm a junior Linguistics major at the University of Florida. 
+            I'm an excellent communicator because I have a knack for attention to detail from writing, editing and coding. 
+          </p> 
 
             <ul >
               
               <li><a href="https://www.linkedin.com/in/kaylamarielane/" target="_blank"> 
-                <svg class="social" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#ffffff"><path d="M21 8v8a5 5 0 01-5 5H8a5 5 0 01-5-5V8a5 5 0 015-5h8a5 5 0 015 5zM7 17v-7" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 17v-3.25M11 10v3.75m0 0c0-3.75 6-3.75 6 0V17M7 7.01l.01-.011" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                LI
               </a></li>
 
-              <li><a href="https://github.com/kaylalane" target="_blank"> 
-                <svg class="social" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M16 22.027v-2.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 00-1.5-3.75 5.07 5.07 0 00-.09-3.77s-1.18-.35-3.91 1.48a13.38 13.38 0 00-7 0c-2.73-1.83-3.91-1.48-3.91-1.48A5.07 5.07 0 005 5.797a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7a3.37 3.37 0 00-.94 2.58v2.87M9 20.027c-3 .973-5.5 0-7-3" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-              </a>
-              </li>
-              <li><a href="https://www.instagram.com/motionsbykayla/" target="_blank">
-                <svg class="social" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 16a4 4 0 100-8 4 4 0 000 8z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 16V8a5 5 0 015-5h8a5 5 0 015 5v8a5 5 0 01-5 5H8a5 5 0 01-5-5z" stroke="#000000" stroke-width="1.5"></path><path d="M17.5 6.51l.01-.011" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-              </a>
-              </li>
-              
-              <li><a href="mailto: kaylalane188@icloud.com" target="_blank">
-                <svg class="social" width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 9l5 3.5L17 9" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 17V7a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2z" stroke="#000000" stroke-width="1.5"></path></svg>
-               
-              </a>
+              <li>
+                <a href="https://github.com/kaylalane" target="_blank"> 
+                  GH
+                </a>
               </li>
             </ul>
-            
-            
-          </section>
+
+          </article>
           
-        </div>
-      <section id="about-me" class="" >
-        <br><br><br><br>
-          <!--
-          <div class="column logo">
-            <img src="media/icons/k-logo.png" class=""/>
-          </div>
-          -->
-         
-          <h1 class="sectionTitle">About me</h1>
+      <article id="about-me" class="full-width" >
+        
+          <h2 class="article-title">About me</h2>
           <div class="row">
             
             <div class="column info">
-              <div class="box">
-              <p>
-                I'm a junior Linguistics major at the University of Florida. 
-                I'm an excellent communicator because I have a knack for attention to detail from writing, editing and coding. 
-              </p>  
-              <p>
-                Creating things is my hobby, whether it be art, writing or crotcheting hats. 
-            </p>
-            <p>
-                I'm currently seeking internships in publishing and web development so feel free to email me at kaylalane188@icloud.com or message me on LinkedIn.
-            </p>
-            <a href="src/media/files/LaneKayla_Resume.pdf" target="_blank">
-              <button type="button" class="download-button">Resume</button>
-            </a> 
-
-              </div>
+                <img
+                  src="./src/media/icons/kayla-icon.png"
+                  alt="icon"
+                  class="icon"
+                />
+               
             </div>
 
             <div class="column">
@@ -122,119 +94,156 @@
                 <div>
                   <h4>HTML</h4>
                   <div class="progress-background">
-                    <div class="progress-bar html"></div>
+                    <div class="progress-bar ninety"></div>
                   </div>  
                 </div>
 
                 <div>
                   <h4>CSS</h4>
                   <div class="progress-background">
-                    <div class="progress-bar css"></div>
+                    <div class="progress-bar ninety"></div>
                   </div>
                 </div>
                 
                 <div>
                   <h4>Javascript</h4>
                   <div class="progress-background">
-                    <div class="progress-bar javascript"></div>
+                    <div class="progress-bar sixty"></div>
                   </div>
                 </div>
+
+                <div>
+                  <h4>Tailwind</h4>
+                  <div class="progress-background">
+                    <div class="progress-bar sixty"></div>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4>React</h4>
+                  <div class="progress-background">
+                    <div class="progress-bar sixty"></div>
+                  </div>
+                </div>
+
               </div>
             </div>
 
           
-        
       </div>
-     </section>
-     <div class="section-pink">
-      <section class="" id="projects">
-        <h1 class="sectionTitle">Projects</h1>
+     </article>
 
+     <article class="full-width" id="projects">
+      <h2 class="article-title">Projects</h2>
+    
 
-         <article>
+        <section class="">
+          <div class="text">
+            
+            <h3><a href="https://netflix-dusky-tau.vercel.app/" target="_blank">Netflix Clone</a> </h3>
+            
+            <p class="details-box">
+              An unfinished Netflix clone. I still need to code the popup details page.
+            </p>
+            <h5>Technologies used</h5>
+            <ul>
+              <li>React JS</li>
+              <li>Sass</li>
+              <li>Next</li>
+            </ul>
+          </div>
+
+          <img
+          src="src/media/projects/netflix-clone.png"
+          />
+
+        </section>
+
+        <section class="reverse">
+
           <div class="text">
 
-          <h2>Flashcard Website</h2>
-          <p class="black-box">Description of project. A basic flashcard website I hosted in Firebase. </p>
-          <h4>Technologies used</h4>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-          </ul>
+            <h3>
+              <a href="https://trivia-game-tawny.vercel.app/" target="_blank">Trivia Game</a> 
+            </h3>
+
+            <p class="details-box">
+              A trivia game to get more comfortable with hooks in React. 
+              
+            </p>
+            
+            <h5>Technologies used</h5>
+            <ul>
+              <li>React Js</li>
+              <li>Next JS</li>
+              <li>Chakra UI</li>
+            </ul>
+          
+          </div>
+
+          
+          <img
+            src="src/media/projects/trivia-game.png"
+          />
+        </section>
+
+         <section>
+          <div class="text">
+
+            <h3>
+              <a href="https://flashcards.kaylamarielane.com/" target="_blank">Flashcard Website </a>
+            </h3>
+            <p class="details-box">
+              A basic flashcard website I hosted in Firebase. By the end of Spring 2023,
+              I plan to figure out how to integrate SQL and storage. 
+            </p>
+            <h5>Technologies used</h5>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Javascript</li>
+              <li>Firebase</li>
+            </ul>
          
           </div>
+
           <img
             src="src/media/projects/flashcards.png"
           />
-        </article>
-
-        <article class="reverse">
-          <div class="text">
-
-          <h2>Minesweeper</h2>
-          <p class="black-box">Description of project. A basic flashcard website I hosted in Firebase. </p>
-          <h4>Technologies used</h4>
-          <ul>
-            <li>C++</li>
-            <li>SFML</li>
-          </ul>
-         
-          </div>
-          <img
-            src="src/media/projects/minesweeper.png"
-          />
-        </article>
-
-      </section>
-     </div>
+        </section>
+        
+        
+     
+      </article>
     
-      <section id="goals" class="tabContent">
-        <h1 class="sectionTitle">Goals</h1>
-        <div class="goalsBox">
-          <h3>Professional Goals</h3>
-          
-          <svg width="14px" height="14px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 12.5l3 3 7-7" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          Make a portfolio website
-          <br>
+      <article id="goals" class="">
+        <h3 class="article-title">Goals</h3>
 
-          <svg width="14px" height="14px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          Create a small React project.
-          <br>
           
-          <svg width="14px" height="14px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          Make a flashcard website
+          <ul>
+            <li>Make a portfolio website
+              <ul class="done">
+                <li>Create a translate button</li>
+              </ul>
+            </li>
+            
+            <li><a href="https://netflix-dusky-tau.vercel.app/" alt="Netflix clone">Make a React project | Netflix Clone</a></li>
+          </ul>
           
-          <h3>Language Goals</h3>
-          <svg width="14px" height="14px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 12.5l3 3 7-7" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          Finish a Spanish bio
-          <br>
-
-          <svg width="14px" height="14px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          Test myself on the 100 most common Spanish words
-          
-          <h3>Siteseeing / Travel Goals</h3>
-          <svg width="14px" height="14px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 12.5l3 3 7-7" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          Paynes Praire Preserve State Park | Jan. 27, 2023
-          <br>
-
-          <svg width="14px" height="14px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          Cone's Dike Trail
-        </div>
-      </section>
-      <!-- <div class="section-pink">
-        <section id="contact-me">
+      </article>
+      <!-- <div class="article-pink">
+        <article id="contact-me">
           <h1>Contact me</h1>
           <p>
           I'm always interested in new opportunites!
           </p>
           <buttom></buttom>
-        </section>
+        </article>
       </div>
  -->
       <!--
-      <section id="lang" class="tabContent">
-        <h2 class="section-title">Spanish</h2>
+      <article id="lang" class="tabContent">
+        <h2 class="article-title">Spanish</h2>
         <div class="row">
           <div class="sidebar">
 
@@ -270,7 +279,7 @@
 
 
         </div>
-      </section>
+      </article>
     -->
 
     </main>
@@ -279,11 +288,8 @@
       
       
     <footer>
-        <p class="copy">&copy; Copyright 2022</p>
-        <p class="copy">
-          Built by Kayla Lane
-        </p>
+        <p class="copy">&copy; Copyright 2023</p>
     </footer>
-    
-    </body> 
+    <script src="src/script.jsx"></script>
+    </body>  
 </html>
