@@ -2,29 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Noto+Sans+JP:wght@400;500;700&family=PT+Serif&family=Roboto:wght@400;500&display=swap');
 
 :root {
-  --primary-color: #6B1848;
-  --secondary-color: #8AA8A9;
-  --tertiary-color: #9E728C;
-  --secondary-shadow: #efeded;
-  --tan: #E1C6A1;
-  --russian-violet: #290438ff;
-  --languid-lavender: #e3d8f1ff;
-  --cyber-grape: #594573;
-  --cyber-grape-contrast: #D3F0FF;
-  --contrast-blue: #435E6A;
-  margin: 0;
-  padding:0;
+  --primary-color: #1E0F37;
+  --secondary-color: white;
+  --tertiary-color: #A978F2;
   font-family: 'PT Serif', serif;
-  
   scroll-behavior: smooth;
-  background-color: #F1F1EB;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   box-sizing: border-box;
-  
+
   --transition-duration: .5s;
   --transition-easing: cubic-bezier(0.5, 0, 0.5, 1);
   --animation-duration: 0.8s;
   
 }
+
 html, body, main {
   margin: 0;
   padding:0;
@@ -32,13 +24,21 @@ html, body, main {
   position: relative;
 }
 
-h1, button {
+h1, h2, h3 {
   font-family: 'Gloock', serif;
 }
 
-h3 {
-  font-size: 25pt;
+h1 {
+  font-size: 70pt;
   margin: 0;
+  padding: 0;
+  color: #A978F2;
+}
+
+h3 {
+  font-size: 20pt;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -48,63 +48,45 @@ img {
 main {
   display: flex;
   flex-flow: column;
-  gap:3rem;
 }
 
 article {
   display: flex;
   flex-flow: column wrap;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 0;
+  padding: 2rem;
+}
+
+.bg-white {
+  background-color: black;
+  color: var(--secondary-color);
 }
 
 a {
-  color: black;
+  color: var(--secondary-color);
   text-decoration: none;
   transition: .3s;
   display: block;
   cursor: pointer;
 
 }
-
-a:hover {
-  color:#6B1848;
-}
-
-button {
-  color:white;
-  padding: 10px;
-  font-size: 14pt;
-  margin-top: 1rem;
-  display: block;
-  text-align: center;
-  border: none;
-  border-radius: 9px;
-  transition: all var(--transition-duration) var(--transition-easing);
-  background-color: var(--primary-color);
-
-}
-
-button:hover {
-  color: white;
-  transform: scale(1.2);
-}
+  a:hover {
+    color: var(--tertiary-color);
+  }
 
 .resume {
-  background-color: #6B1848;
-  color: white;
+  background-color:var(--tertiary-color);
+  color: #1E0F37;
   padding: .5rem;
   border-radius: 5px;
 
   transition: all var(--transition-duration) var(--transition-easing);
   will-change: transform;
-
 }
-
-.resume:hover {
-  color: white;
-  transform: scale(1.2);
-}
+  .resume:hover {
+    color: var(--primary-color);
+    transform: scale(1.2);
+  }
 
 .article-title {
   font-size: 30pt;
@@ -112,11 +94,7 @@ button:hover {
   padding-bottom: 1rem;
 }
 
-.tab {
-  margin-left: 30px;
-}
-
-.full-width{
+.full-width {
   min-height: 100vh;
 }
 
@@ -131,19 +109,9 @@ button:hover {
   flex-basis: 50%;
 }
 
-.box {
-  padding: 2rem;
-  background-color: black;
-  color:white;
-  border-radius: 8px;
-  margin-left: 5px;
-  margin-right: 30px;
-  overflow: auto;
-}
-
 /* NAVIGATION */
 header {
-  padding: 1rem;
+  padding: 2rem;
   margin: 0;
 }
 
@@ -159,44 +127,29 @@ nav ul {
 
     
 }
-
-nav li {
-  font-size: 16pt;
-  font-weight: 800;
-  display: block;
-}
-
-nav li:first-child {
-  margin-right: auto;
-}
-
-nav img {
-  width: 90px;
-}
+  nav li {
+    font-size: 16pt;
+    font-weight: 800;
+    display: block;
+  }
+    nav li:first-child {
+      margin-right: auto;
+    }
+    nav img {
+      width: 90px;
+    }
 /* NAVIGATION END */
 
 /* -------   Hero  ------- */
 #intro {
   max-width: 1200px;
   justify-content: center;
-
-
-}
-
-h1 {
-  font-size: 60pt;
-  margin: 0;
-  padding: 0;
 }
 
 .position {
   font-size: 20pt;
   margin: 0;
   padding: 0;
-}
-
-p {
-  font-size: 12pt;
 }
 
 #intro ul {
@@ -207,7 +160,6 @@ p {
   margin: 0;
 }
 
-
 #about-me img {
   max-width: 400px;
 }
@@ -217,14 +169,13 @@ text-align: center;
 }
 /* ------   Hero End   ------- */
 
-
 /* ------ About Me ------- */
 #progress {
   animation: slide-up 4s var(--transition-easing);
 }
 
 .progress-background {
-  background-color: var(--secondary-shadow);
+  background-color: var(--secondary-color);
   width: 80%;
   border-radius: 15px;
   animation: fadeInAnimation ease 3s;
@@ -232,7 +183,7 @@ text-align: center;
 } 
 
 .progress-bar {
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color);
   height: 15px;
   color: white;
   text-align: right;
@@ -280,41 +231,29 @@ text-align: center;
   #projects img {
     width: 60%;
     margin: 2rem 0 4rem o; 
-    border-left: 1px solid #6B1848;
-    border-top: 1px solid #6B1848;
+    border-left: 1px solid var(--tertiary-color);
+    border-top: 1px solid var(--tertiary-color);
     border-radius: 25px;
     padding: 1rem;
   }
 
   .details-box {
-    color: white;
-    background-color: black;
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     border-radius: 5px;
     padding: 1rem;
     font-size: 1rem;
     line-height: 1.5;
   }
 
-
-
 /* ------ Projects End ------- */
 
 #goals {
   list-style-type: none;
-
-
-}
-
-
-h3 {
-  padding-bottom: 0;
-}
-a {
-  color: black;
 }
 
 #goals li::marker {
-  content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="30" height="20" fill="rgb(107, 24, 72)"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>');
+  content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="30" height="20" fill="rgb(169, 120, 242)"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>');
 }
 
 .done li::marker {
@@ -351,7 +290,7 @@ footer {
     grid-template-columns: repeat(10, 1fr);
     gap: 1rem;
   }
-
+  
   #projects img {
     grid-column: 1/9;
     grid-row: 1/2;
